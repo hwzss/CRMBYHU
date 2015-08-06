@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *path=[[NSBundle mainBundle] pathForResource:@"customerTableList" ofType:@"plist"];
+    NSDictionary *dic=[NSDictionary dictionaryWithContentsOfFile:path];
+    NSLog(@"%@",[dic objectForKey:@"客户名称"]);
     // Do any additional setup after loading the view, typically from a nib.
 }
 

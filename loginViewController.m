@@ -28,7 +28,7 @@
     [_myalrtview show];
 }
 #pragma -mark crmdelegate
--(void)doWhenEcardGetInfoFromWebServier:(NSString *)soapresult{
+-(void)doWhenEcardGetInfoFromWebServier:(NSString *)soapresult getWhatInfo:(NSString *)getwhat{
     if ([soapresult isEqualToString:@"成功"]) {
         [self performSegueWithIdentifier:@"signIn" sender:self];
       

@@ -54,13 +54,18 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 #pragma -mark crmdelegate
--(void)doWhenEcardGetInfoFromWebServier:(NSString *)soapresult
+-(void)doWhenEcardGetInfoFromWebServier:(NSString *)soapresult getWhatInfo:(NSString *)getwhat
 {
+    if (![soapresult isEqualToString:@"成功"]) {
+        UIAlertView *alrtview=[[UIAlertView alloc]initWithTitle:nil message:@"插入失败" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alrtview show];
+    }
     
 }
 -(void)doWhenHttpCollecttionFalil:(NSError *)error
 {
-    
+    UIAlertView *alrtview=[[UIAlertView alloc]initWithTitle:nil message:[error localizedDescription] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alrtview show];
 }
 #pragma -mark 设置客户级别，行业，部门label的值
 -(void)SetCustomerLevelLabelValue:(NSNotification *) notification
@@ -110,16 +115,17 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section==0) {
-        UIStoryboard *mainstoryboard=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-        DetailTitleTableViewController *deVc=[mainstoryboard instantiateViewControllerWithIdentifier:@"detailTitleVc"];
+          DetailTitleTableViewController *deVc=[[DetailTitleTableViewController alloc]init];
         if (indexPath.row==1) {
             deVc.getWhat=@"CustomerLevel";
+            [self.navigationController pushViewController:deVc animated:YES];
         }
         if (indexPath.row==2) {
             deVc.getWhat=@"CustomerField";
+            [self.navigationController pushViewController:deVc animated:YES];
         }
  
-       [self.navigationController pushViewController:deVc animated:YES];
+       
     }
     if (indexPath.section==4) {
         DetailTitleTableViewController *deVc=[[DetailTitleTableViewController alloc]init];

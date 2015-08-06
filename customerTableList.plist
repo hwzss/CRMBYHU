@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>邮编</key>
+	<string>Post_Code</string>
+	<key>客户所有人</key>
+	<string>User_Id</string>
+	<key>客户名称</key>
+	<string>User_Name</string>
+	<key>客户级别</key>
+	<string>CustomerLevel_Id</string>
+	<key>电话</key>
+	<string>Customer_Tel</string>
+	<key>创建人</key>
+	<string>Create_Person</string>
+	<key>备注</key>
+	<string>Remark</string>
+	<key>创建日期</key>
+	<string>Create_Date</string>
+	<key>地址</key>
+	<string>Customer_Addr</string>
+	<key>公司网址</key>
+	<string>Company_Url</string>
+	<key>销售额</key>
+	<string>Money</string>
+	<key>行业</key>
+	<string>CustomerField_Id</string>
+	<key>部门</key>
+	<string>Department_Id</string>
+</dict>
+</plist>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="customerDetailInfoVIew">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7s1-eb-tmU">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.4376974361" green="1" blue="0.52655080949999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="T3v-40-sTf"/>
+                    </constraints>
+                    <state key="normal" title="修改资料">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="T3v-40-sTf"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="T3v-40-sTf"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="modifyCustomerInfo:" destination="iN0-l3-epB" eventType="touchUpInside" id="9ll-FZ-kix"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fLm-hk-jSG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="qTX-yY-3cO"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="e5c-zu-BaH"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7s1-eb-tmU" firstAttribute="top" secondItem="fLm-hk-jSG" secondAttribute="bottom" id="HPw-uA-b2q"/>
+                <constraint firstItem="7s1-eb-tmU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KMS-u0-7ea"/>
+                <constraint firstItem="fLm-hk-jSG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YmN-zo-KBI"/>
+                <constraint firstItem="fLm-hk-jSG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZSx-XZ-gjX"/>
+                <constraint firstAttribute="trailing" secondItem="7s1-eb-tmU" secondAttribute="trailing" id="cE2-op-sBr"/>
+                <constraint firstAttribute="trailing" secondItem="fLm-hk-jSG" secondAttribute="trailing" id="uki-Do-utn"/>
+                <constraint firstAttribute="bottom" secondItem="7s1-eb-tmU" secondAttribute="bottom" id="w44-gR-RSZ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="7s1-eb-tmU"/>
+                    <exclude reference="fLm-hk-jSG"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="HPw-uA-b2q"/>
+                    <exclude reference="KMS-u0-7ea"/>
+                    <exclude reference="cE2-op-sBr"/>
+                    <exclude reference="w44-gR-RSZ"/>
+                    <exclude reference="YmN-zo-KBI"/>
+                    <exclude reference="ZSx-XZ-gjX"/>
+                    <exclude reference="uki-Do-utn"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="7s1-eb-tmU"/>
+                    <include reference="fLm-hk-jSG"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="HPw-uA-b2q"/>
+                    <include reference="KMS-u0-7ea"/>
+                    <include reference="cE2-op-sBr"/>
+                    <include reference="w44-gR-RSZ"/>
+                    <include reference="YmN-zo-KBI"/>
+                    <include reference="ZSx-XZ-gjX"/>
+                    <include reference="uki-Do-utn"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="viewsBtn" destination="7s1-eb-tmU" id="QYV-Ob-oDA"/>
+                <outlet property="viewsTableview" destination="fLm-hk-jSG" id="x4u-y5-GfF"/>
+            </connections>
+            <point key="canvasLocation" x="223" y="245"/>
+        </view>
+    </objects>
+</document>

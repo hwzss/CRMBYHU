@@ -144,7 +144,7 @@
     [self runWithsoapXml:soapMsg];
 
 }
--(void)addCustomer:(int) customerId Name:(NSString *)name  ParenrCusId:(int)preCusId  userId:(int)uId departId:(int)depId LevelId:(int)levelId feildId:(int)feildId Money:(float)money compUrl:(NSString *)url Tel:(NSString *)tel Addr:(NSString *)addr Remark:(NSString *)remark postcode:(NSString *)p_code   Fax:(NSString *)fax cDate:(NSString *  )cdate cPerson:(NSString *)cperson mDate:(NSString *)mdate mPerson:(NSString *)mPerson{
+-(void)addCustomer:(int) customerId Name:(NSString *)name  ParenrCusId:(int)preCusId  userId:(int)uId departId:(int)depId LevelId:(int)levelId feildId:(int)feildId Money:(float)money compUrl:(NSString *)url Tel:(NSString *)tel Addr:(NSString *)addr Remark:(NSString *)remark postcode:(NSString *)p_code   Fax:(NSString *)fax cDate:(NSString *  )cdate cPerson:(NSString *)cperson mDate:(NSString *)mdate mPerson:(NSString *)mPerson{//添加客户
     
     NSString *soapMsg = [NSString stringWithFormat:
                          @"<?xml version=\"1.0\" encoding=\"utf-8\"?>"
@@ -181,10 +181,44 @@
     matchingElement = @"addCustomerResult";
     [self runWithsoapXml:soapMsg];
 }
+-(void)getActivityRecordsByCustomerid:(int)customerId{//通过客户id查询活动记录
+    NSString *soapMsg = [NSString stringWithFormat:
+                         @"<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+                         "<soap12:Envelope "
+                         "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" "
+                         "xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" "
+                         "xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">"
+                         "<soap12:Body>"
+                         "<getActivitsByCustomerId xmlns=\"xaiohu/CRM\">"
+                        " <customerId>%d</customerId>"
+                         "</getActivitsByCustomerId>"
+                         "</soap12:Body>"
+                         "</soap12:Envelope>",customerId];
+    matchingElement = @"getActivitsByCustomerIdResult";
+    [self runWithsoapXml:soapMsg];
+}
+-(void)getCustomerInfoByCustomerId:(int)customerid getWhatInfo:(NSString *)getwhatinfo
+{
+    NSString *soapMsg = [NSString stringWithFormat:
+                         @"<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+                         "<soap12:Envelope "
+                         "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" "
+                         "xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" "
+                         "xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">"
+                         "<soap12:Body>"
+                         "<getCustomerInfo xmlns=\"xaiohu/CRM\">"
+                         "<customerId>%d</customerId>"
+                         "</getCustomerInfo>"
+                         "</soap12:Body>"
+                         "</soap12:Envelope>",customerid];
+    matchingElement = @"getCustomerInfoResult";
+    self.getWhatInfo=getwhatinfo;
+    [self runWithsoapXml:soapMsg];
+}
 -(void)runWithsoapXml:(NSString *)soapWithXml{
 
     NSString *soapMsg=soapWithXml;
-    NSLog(@"%s%@",__func__,soapMsg);
+//    NSLog(@"%s%@",__func__,soapMsg);
 //     将这个XML字符串打印出来
   //  NSLog(@"将这个XML字符串打印出来%@", soapMsg);
     // 创建URL，内容是前面的请求报文报文中第二行主机地址加上第一行URL字段
@@ -229,12 +263,12 @@
 
 // 完成接收数据时调用
 -(void) connectionDidFinishLoading:(NSURLConnection *) connection {
-    NSString *theXML = [[NSString alloc] initWithBytes:[webData mutableBytes]
-                                                length:[webData length]
-                                              encoding:NSUTF8StringEncoding];
-    
-    // 打印出得到的XML
-    NSLog(@"打印出得到的XML%@", theXML);
+//    NSString *theXML = [[NSString alloc] initWithBytes:[webData mutableBytes]
+//                                                length:[webData length]
+//                                              encoding:NSUTF8StringEncoding];
+//    
+//    // 打印出得到的XML
+//    NSLog(@"打印出得到的XML%@", theXML);
     // 使用NSXMLParser解析出我们想要的结果
     xmlParser = [[NSXMLParser alloc] initWithData: webData];
     [xmlParser setDelegate: self];
@@ -269,7 +303,7 @@
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
     if ([elementName isEqualToString:matchingElement]) {
 
-        [self.soapDelgate doWhenEcardGetInfoFromWebServier:soapResults];
+        [self.soapDelgate doWhenEcardGetInfoFromWebServier:soapResults getWhatInfo:_getWhatInfo];
         elementFound = FALSE;
         // 强制放弃解析
         // [xmlParser abortParsing];

@@ -10,12 +10,21 @@
 		044837931B7040A200FE78F3 /* softUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 044837921B7040A200FE78F3 /* softUser.m */; };
 		045816811B71AE3C00C3CBFB /* ActivityRecordsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045816801B71AE3C00C3CBFB /* ActivityRecordsTableViewController.m */; };
 		045816841B71BA2B00C3CBFB /* addCustomerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045816831B71BA2B00C3CBFB /* addCustomerTableViewController.m */; };
-		046764B51B70DA130011AC81 /* detailCustomerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046764B31B70DA130011AC81 /* detailCustomerTableViewController.m */; };
 		046764B91B70DD6E0011AC81 /* DetailTitleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046764B81B70DD6E0011AC81 /* DetailTitleTableViewController.m */; };
+		0469B7661B73792D00FEA50A /* modifyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469B7651B73792D00FEA50A /* modifyTableViewController.m */; };
 		0491BA661B720D2400F43B9D /* dateToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491BA651B720D2400F43B9D /* dateToString.m */; };
 		04A05ED21B6F13EB0005B637 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A05ED11B6F13EB0005B637 /* loginViewController.m */; };
 		04A05ED61B6F14EA0005B637 /* crmSoap.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A05ED51B6F14EA0005B637 /* crmSoap.m */; };
 		04A605121B708FF000E4D572 /* myCustomerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A605101B708FF000E4D572 /* myCustomerTableViewController.m */; };
+		04B71C9C1B72E392002FF249 /* customerDetailInfoVIew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B71C9B1B72E392002FF249 /* customerDetailInfoVIew.xib */; };
+		04B71C9E1B72E400002FF249 /* customerActivitysView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B71C9D1B72E400002FF249 /* customerActivitysView.xib */; };
+		04B71CA11B72E7C4002FF249 /* customerDetailInfoVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B71CA01B72E7C4002FF249 /* customerDetailInfoVIew.m */; };
+		04B71CA41B72E80B002FF249 /* customerActivitysView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B71CA31B72E80B002FF249 /* customerActivitysView.m */; };
+		04B71CA71B72E943002FF249 /* lookingCustoerInfoViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B71CA61B72E943002FF249 /* lookingCustoerInfoViewViewController.m */; };
+		04B71CA91B72EAEA002FF249 /* login_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04B71CA81B72EAEA002FF249 /* login_bg@2x.jpg */; };
+		04B71CAF1B732C01002FF249 /* derailCustomerInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B71CAE1B732C01002FF249 /* derailCustomerInfo.plist */; };
+		04B71CB11B732FFA002FF249 /* customerTableList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B71CB01B732FFA002FF249 /* customerTableList.plist */; };
+		04B71CB31B733AF2002FF249 /* detailCustomer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B71CB21B733AF2002FF249 /* detailCustomer.plist */; };
 		E7526E4C1B67504200C6468F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7526E4B1B67504200C6468F /* main.m */; };
 		E7526E4F1B67504200C6468F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7526E4E1B67504200C6468F /* AppDelegate.m */; };
 		E7526E521B67504200C6468F /* CRM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7526E501B67504200C6468F /* CRM.xcdatamodeld */; };
@@ -43,10 +52,10 @@
 		045816801B71AE3C00C3CBFB /* ActivityRecordsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityRecordsTableViewController.m; sourceTree = "<group>"; };
 		045816821B71BA2B00C3CBFB /* addCustomerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addCustomerTableViewController.h; sourceTree = "<group>"; };
 		045816831B71BA2B00C3CBFB /* addCustomerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addCustomerTableViewController.m; sourceTree = "<group>"; };
-		046764B21B70DA130011AC81 /* detailCustomerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailCustomerTableViewController.h; sourceTree = "<group>"; };
-		046764B31B70DA130011AC81 /* detailCustomerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailCustomerTableViewController.m; sourceTree = "<group>"; };
 		046764B71B70DD6E0011AC81 /* DetailTitleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTitleTableViewController.h; sourceTree = "<group>"; };
 		046764B81B70DD6E0011AC81 /* DetailTitleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTitleTableViewController.m; sourceTree = "<group>"; };
+		0469B7641B73792D00FEA50A /* modifyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modifyTableViewController.h; sourceTree = "<group>"; };
+		0469B7651B73792D00FEA50A /* modifyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modifyTableViewController.m; sourceTree = "<group>"; };
 		0491BA641B720D2400F43B9D /* dateToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dateToString.h; sourceTree = "<group>"; };
 		0491BA651B720D2400F43B9D /* dateToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dateToString.m; sourceTree = "<group>"; };
 		04A05ED01B6F13EB0005B637 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
@@ -56,6 +65,18 @@
 		04A05EDC1B6F53490005B637 /* crmDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crmDelegate.h; sourceTree = "<group>"; };
 		04A6050F1B708FF000E4D572 /* myCustomerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myCustomerTableViewController.h; sourceTree = "<group>"; };
 		04A605101B708FF000E4D572 /* myCustomerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myCustomerTableViewController.m; sourceTree = "<group>"; };
+		04B71C9B1B72E392002FF249 /* customerDetailInfoVIew.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customerDetailInfoVIew.xib; sourceTree = "<group>"; };
+		04B71C9D1B72E400002FF249 /* customerActivitysView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customerActivitysView.xib; sourceTree = "<group>"; };
+		04B71C9F1B72E7C4002FF249 /* customerDetailInfoVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customerDetailInfoVIew.h; sourceTree = "<group>"; };
+		04B71CA01B72E7C4002FF249 /* customerDetailInfoVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customerDetailInfoVIew.m; sourceTree = "<group>"; };
+		04B71CA21B72E80B002FF249 /* customerActivitysView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customerActivitysView.h; sourceTree = "<group>"; };
+		04B71CA31B72E80B002FF249 /* customerActivitysView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customerActivitysView.m; sourceTree = "<group>"; };
+		04B71CA51B72E943002FF249 /* lookingCustoerInfoViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lookingCustoerInfoViewViewController.h; sourceTree = "<group>"; };
+		04B71CA61B72E943002FF249 /* lookingCustoerInfoViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lookingCustoerInfoViewViewController.m; sourceTree = "<group>"; };
+		04B71CA81B72EAEA002FF249 /* login_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login_bg@2x.jpg"; sourceTree = "<group>"; };
+		04B71CAE1B732C01002FF249 /* derailCustomerInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = derailCustomerInfo.plist; sourceTree = "<group>"; };
+		04B71CB01B732FFA002FF249 /* customerTableList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = customerTableList.plist; sourceTree = "<group>"; };
+		04B71CB21B733AF2002FF249 /* detailCustomer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = detailCustomer.plist; sourceTree = "<group>"; };
 		E7526E461B67504200C6468F /* CRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7526E4A1B67504200C6468F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7526E4B1B67504200C6468F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,35 +111,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0469B7631B73777B00FEA50A /* inages */ = {
+			isa = PBXGroup;
+			children = (
+				04B71CA81B72EAEA002FF249 /* login_bg@2x.jpg */,
+			);
+			name = inages;
+			sourceTree = "<group>";
+		};
 		04A05ED31B6F13FD0005B637 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				04A05ED01B6F13EB0005B637 /* loginViewController.h */,
-				04A05ED11B6F13EB0005B637 /* loginViewController.m */,
-			);
-			name = viewControllers;
-			sourceTree = "<group>";
-		};
-		E7526E3D1B67504200C6468F = {
-			isa = PBXGroup;
-			children = (
-				0491BA641B720D2400F43B9D /* dateToString.h */,
-				0491BA651B720D2400F43B9D /* dateToString.m */,
+				04B71CA51B72E943002FF249 /* lookingCustoerInfoViewViewController.h */,
+				04B71CA61B72E943002FF249 /* lookingCustoerInfoViewViewController.m */,
 				045816821B71BA2B00C3CBFB /* addCustomerTableViewController.h */,
 				045816831B71BA2B00C3CBFB /* addCustomerTableViewController.m */,
 				0458167F1B71AE3C00C3CBFB /* ActivityRecordsTableViewController.h */,
 				045816801B71AE3C00C3CBFB /* ActivityRecordsTableViewController.m */,
 				046764B71B70DD6E0011AC81 /* DetailTitleTableViewController.h */,
 				046764B81B70DD6E0011AC81 /* DetailTitleTableViewController.m */,
-				046764B21B70DA130011AC81 /* detailCustomerTableViewController.h */,
-				046764B31B70DA130011AC81 /* detailCustomerTableViewController.m */,
 				04A6050F1B708FF000E4D572 /* myCustomerTableViewController.h */,
 				04A605101B708FF000E4D572 /* myCustomerTableViewController.m */,
-				044837911B7040A200FE78F3 /* softUser.h */,
-				044837921B7040A200FE78F3 /* softUser.m */,
+				04A05ED01B6F13EB0005B637 /* loginViewController.h */,
+				04A05ED11B6F13EB0005B637 /* loginViewController.m */,
+			);
+			name = viewControllers;
+			sourceTree = "<group>";
+		};
+		04B71C9A1B72E366002FF249 /* VIEWSXIB */ = {
+			isa = PBXGroup;
+			children = (
+				04B71CA21B72E80B002FF249 /* customerActivitysView.h */,
+				04B71CA31B72E80B002FF249 /* customerActivitysView.m */,
+				04B71C9D1B72E400002FF249 /* customerActivitysView.xib */,
+				04B71C9F1B72E7C4002FF249 /* customerDetailInfoVIew.h */,
+				04B71CA01B72E7C4002FF249 /* customerDetailInfoVIew.m */,
+				04B71C9B1B72E392002FF249 /* customerDetailInfoVIew.xib */,
+			);
+			name = VIEWSXIB;
+			sourceTree = "<group>";
+		};
+		04B71CAA1B72FA56002FF249 /* soap */ = {
+			isa = PBXGroup;
+			children = (
 				04A05EDC1B6F53490005B637 /* crmDelegate.h */,
 				04A05ED41B6F14EA0005B637 /* crmSoap.h */,
 				04A05ED51B6F14EA0005B637 /* crmSoap.m */,
+			);
+			name = soap;
+			sourceTree = "<group>";
+		};
+		E7526E3D1B67504200C6468F = {
+			isa = PBXGroup;
+			children = (
+				0469B7641B73792D00FEA50A /* modifyTableViewController.h */,
+				0469B7651B73792D00FEA50A /* modifyTableViewController.m */,
+				0469B7631B73777B00FEA50A /* inages */,
+				04B71CB21B733AF2002FF249 /* detailCustomer.plist */,
+				04B71CB01B732FFA002FF249 /* customerTableList.plist */,
+				04B71CAE1B732C01002FF249 /* derailCustomerInfo.plist */,
+				04B71CAA1B72FA56002FF249 /* soap */,
+				04B71C9A1B72E366002FF249 /* VIEWSXIB */,
+				0491BA641B720D2400F43B9D /* dateToString.h */,
+				0491BA651B720D2400F43B9D /* dateToString.m */,
+				044837911B7040A200FE78F3 /* softUser.h */,
+				044837921B7040A200FE78F3 /* softUser.m */,
 				04A05ED31B6F13FD0005B637 /* viewControllers */,
 				E7526E481B67504200C6468F /* CRM */,
 				E7526E651B67504200C6468F /* CRMTests */,
@@ -257,9 +314,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B71CAF1B732C01002FF249 /* derailCustomerInfo.plist in Resources */,
 				E7526E581B67504200C6468F /* Main.storyboard in Resources */,
 				E7526E5D1B67504200C6468F /* LaunchScreen.xib in Resources */,
 				E7526E5A1B67504200C6468F /* Images.xcassets in Resources */,
+				04B71C9C1B72E392002FF249 /* customerDetailInfoVIew.xib in Resources */,
+				04B71C9E1B72E400002FF249 /* customerActivitysView.xib in Resources */,
+				04B71CA91B72EAEA002FF249 /* login_bg@2x.jpg in Resources */,
+				04B71CB31B733AF2002FF249 /* detailCustomer.plist in Resources */,
+				04B71CB11B732FFA002FF249 /* customerTableList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,15 +344,18 @@
 				04A605121B708FF000E4D572 /* myCustomerTableViewController.m in Sources */,
 				046764B91B70DD6E0011AC81 /* DetailTitleTableViewController.m in Sources */,
 				0491BA661B720D2400F43B9D /* dateToString.m in Sources */,
+				04B71CA41B72E80B002FF249 /* customerActivitysView.m in Sources */,
+				0469B7661B73792D00FEA50A /* modifyTableViewController.m in Sources */,
 				04A05ED21B6F13EB0005B637 /* loginViewController.m in Sources */,
 				04A05ED61B6F14EA0005B637 /* crmSoap.m in Sources */,
 				045816811B71AE3C00C3CBFB /* ActivityRecordsTableViewController.m in Sources */,
 				E7526E4C1B67504200C6468F /* main.m in Sources */,
 				044837931B7040A200FE78F3 /* softUser.m in Sources */,
-				046764B51B70DA130011AC81 /* detailCustomerTableViewController.m in Sources */,
+				04B71CA11B72E7C4002FF249 /* customerDetailInfoVIew.m in Sources */,
 				E7526E551B67504200C6468F /* ViewController.m in Sources */,
 				045816841B71BA2B00C3CBFB /* addCustomerTableViewController.m in Sources */,
 				E7526E521B67504200C6468F /* CRM.xcdatamodeld in Sources */,
+				04B71CA71B72E943002FF249 /* lookingCustoerInfoViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

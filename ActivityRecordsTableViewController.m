@@ -19,7 +19,7 @@
 @implementation ActivityRecordsTableViewController
 
 #pragma -mark crmdelegate
--(void)doWhenEcardGetInfoFromWebServier:(NSString *)soapresult{
+-(void)doWhenEcardGetInfoFromWebServier:(NSString *)soapresult getWhatInfo:(NSString *)getwhat{
     if ([soapresult isEqualToString:@"失败"]) {
         UIAlertView *alertview=[[UIAlertView alloc]initWithTitle:@"" message:@"加载失败" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
         [alertview show];

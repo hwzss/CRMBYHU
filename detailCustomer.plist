@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>sectionName</key>
+		<string>基本信息</string>
+		<key>sectionData</key>
+		<array>
+			<string>客户所有人</string>
+			<string>客户名称</string>
+			<string>客户级别</string>
+		</array>
+	</dict>
+	<dict>
+		<key>sectionName</key>
+		<string>联系信息</string>
+		<key>sectionData</key>
+		<array>
+			<string>电话</string>
+			<string>邮编</string>
+		</array>
+	</dict>
+	<dict>
+		<key>sectionName</key>
+		<string>其他信息</string>
+		<key>sectionData</key>
+		<array>
+			<string>备注</string>
+		</array>
+	</dict>
+	<dict>
+		<key>sectionName</key>
+		<string>数据权限</string>
+		<key>sectionData</key>
+		<array>
+			<string>所属部门</string>
+		</array>
+	</dict>
+</array>
+</plist>

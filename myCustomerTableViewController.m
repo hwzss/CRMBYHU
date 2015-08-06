@@ -9,7 +9,7 @@
 #import "myCustomerTableViewController.h"
 #import "softUser.h"
 #import "crmSoap.h"
-
+#import "lookingCustoerInfoViewViewController.h"
 @interface myCustomerTableViewController ()
 @property(strong,nonatomic)crmSoap *soap;
 @property(strong,nonatomic)NSMutableArray *dataOfCustomer;//包涵多条客户信息数据数组，每天数组是一个字典
@@ -20,7 +20,7 @@
 @implementation myCustomerTableViewController
 
 #pragma -mark crmdelegate
--(void)doWhenEcardGetInfoFromWebServier:(NSString *)soapresult{
+-(void)doWhenEcardGetInfoFromWebServier:(NSString *)soapresult getWhatInfo:(NSString *)getwhat{
     if ([soapresult isEqualToString:@"失败"]) {
         UIAlertView *alertview=[[UIAlertView alloc]initWithTitle:@"" message:@"加载失败" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
         [alertview show];
@@ -130,14 +130,13 @@
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-//    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-//    
-//    // Pass the selected object to the new view controller.
-//    
-//    // Push the view controller.
-//    [self.navigationController pushViewController:detailViewController animated:YES];
+    UIStoryboard *mainstoryboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    lookingCustoerInfoViewViewController *lookVc=[mainstoryboard instantiateViewControllerWithIdentifier:@"lookVc"];
+    NSDictionary *dic=[self.dataOfCustomer objectAtIndex:indexPath.row];
+    NSString *customerid=[dic objectForKey:@"Customer_Id"];
+    lookVc.customerId=customerid.intValue;
+    
+    [self.navigationController pushViewController:lookVc animated:YES];
 }
 
 
